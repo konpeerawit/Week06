@@ -10,18 +10,18 @@ namespace Week06
     {
         static void Main()
         {
-            int a = 1;
-            int b = 2;
-            int c;
-            c = add(a, b);
-            Console.WriteLine("c = {0}", c);
-            Console.WriteLine("3 + 5 = {0}", add(3, 5));
-            Console.WriteLine("4 + 7 =  " + add(4, 7));
+            object[] myObjArray = { 2, 'b', 1000.05d, "Hello World" };
+            useParams(myObjArray);
+            useParams("IE.Tech.", "KMITL", 2017);
             Console.ReadLine();
-        }   
-        static int add(int a, int b)
-        {
-        return a + b;
         }
+
+        static void useParams(params object[] list)
+        {
+            foreach (object o in list)
+                Console.Write(o + " ");
+            Console.WriteLine();
+        }
+
     }
 }
