@@ -8,15 +8,15 @@ namespace Week06
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             sayHello();
             Console.ReadLine();
         }
 
-        static void sayHello()
+        static void sayHello(string str)
         {
-            Console.WriteLine("Hello World.");
+            Console.WriteLine(str);
         }
     }
 }
