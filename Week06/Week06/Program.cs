@@ -8,14 +8,24 @@ namespace Week06
 {
     class Program
     {
-                static void Main(string[] args)
-                {
-                    int a = 2;
-                    float f = 3.5f;
-                    double d = 4.99d;
-                    decimal money = 1254841354;
-                    Console.WriteLine(a + " " + f + " " + d + " " + money);
-                }
+        static void Main(string[] args)
+        {
+            int n = 0;
+            ask(ref n);
+            answer(n);
+            Console.ReadKey();
+        }
+        static int ask(ref int n)
+        { 
+          Console.Write("Enter number : ");
+          n = int.Parse(Console.ReadLine());
+          return n;
+        }
+        static int answer(int n)
+        {
+          Console.WriteLine("This number is : " + (n % 2 > 0 ? "Odd number" : "Even number"));
+          return n;
+        }
             
     }
     
