@@ -10,34 +10,23 @@ namespace Week06
     {
         static void Main(string[] args)
         {
-            int n = 0;
-            int i = 0;
-            int[] numbers = new int[6];
-            ask (numbers[i]);
-            answer(numbers);
-
-        }
-        static int ask(int n, int[] numbers)
+            double w = 0d;
+            ask(ref w);
+            calculate(ref w);
+            Console.WriteLine("Weight on Moon is : {0}", w);
+            Console.ReadKey();
+                    }
+                static double ask(ref double w)
         {
+            Console.Write("Enter weight on Moon : ");
+           w = double.Parse(Console.ReadLine());
+            return w;
 
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                Console.Write("Enter numbers {0}", i);
-                numbers[i] = int.Parse(Console.ReadLine());
-            }
-            return n;
-        }
-        static double answer(int n, int[] numbers)
+       }
+        static double calculate(ref double w)
         {
-            for (int i = 0; i < 7; i++)
-            {
-                if ((numbers[i] % 7) = 0)
-                {
-                    Console.Write("");
-                }
-            }
-            return n;
-
+            w *= 1.6;
+            return w;
         }
     }
 }
