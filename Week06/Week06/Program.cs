@@ -10,8 +10,8 @@ namespace Week06
     {
         static void Main()
         {
-            bool a = true;
-            bool b = false;
+            bool a = false;
+            bool b = true;
             Console.WriteLine(a && b);
             Console.WriteLine(a || b);
             Console.WriteLine(!b);
