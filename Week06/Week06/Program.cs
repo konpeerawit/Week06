@@ -10,18 +10,16 @@ namespace Week06
     {
         static void Main()
         {
-            bool a = true;
-            bool b = false;
-            Console.WriteLine(a && b);
-            Console.WriteLine(a || b);
-            Console.WriteLine(!b);
-            Console.WriteLine(b || true);
-            Console.WriteLine((9 > 7) ^ (a == b));
-            Console.WriteLine((b != a) || (a == b));
-            Console.WriteLine((b != a) && (a == b));
-            Console.WriteLine((!a) && (!b));
-            Console.WriteLine((!a) || (!b));
+            int x = 6;
+            int y = 4;
 
+            Console.WriteLine(y *= 2);
+            int z = y = 3;
+
+            Console.WriteLine(z);
+            Console.WriteLine(x |= 1);
+            Console.WriteLine(x += 3);
+            Console.WriteLine(x /= 2);
         }
     }
 }
